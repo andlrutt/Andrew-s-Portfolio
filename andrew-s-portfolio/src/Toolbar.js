@@ -3,12 +3,17 @@ import './App.css';
 
 function Toolbar() {
     return ( 
+        
         <div className="toolbar">
+            
             <ul>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+
+                
             </ul>
         </div>
     );
