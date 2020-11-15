@@ -1,15 +1,15 @@
 import React from 'react';
-import About from './Name';
+import Name from './Name';
 import './App.css';
 import CoverImage from './Cover-image';
 
-function Background() {
+function Cover() {
     return(
-        <div className="background">
-            <About />
+        <div className="cover">
+            <Name />
             <CoverImage />
         </div>
     )
 }
 
-export default Background;
+export default Cover;

@@ -1,17 +1,12 @@
 import React from 'react';
 
-function About() {
+function Name() {
     return (
-        <div className="wrapper">
-            <div className="about">
-            <h1>Andrew Rutter</h1>
-            
-            
-            </div>
+        <div className="name">
+            <h1>Andrew Rutter</h1> 
         </div>
-
         
     );
 }
 
-export default About;
+export default Name;
