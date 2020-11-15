@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from './coverimage.png';
 
 function CoverImage() {
     return (
         <div className="cover-image">
-            <img src="coverimage.png" alt=""></img>           
+            <img id="cover-image-full" src={Image} alt=""></img>               
         </div>
 
     );
