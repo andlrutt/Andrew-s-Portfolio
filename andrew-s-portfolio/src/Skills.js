@@ -5,7 +5,7 @@ function Skills() {
         /*<div className="skills">
             <p>List of skills/specialties in a block of bullet points, maybe with small descriptions</p>
         </div>*/
-        <div className="skills">
+        <div className="skills" id="skills">
             <ul>
                 <li>item 1</li>
                 <li>item 2</li>
