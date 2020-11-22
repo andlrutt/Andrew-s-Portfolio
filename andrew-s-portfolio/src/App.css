@@ -74,10 +74,20 @@
   
 }
 
-.cover > .cover-image {
-  display: flex;
+.cover > * {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+
+.name {
+  text-align: center;
+}
+
+.cover-image > img {
+  min-width: 800px; 
+  
 }
 
 .name {
