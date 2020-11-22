@@ -38,6 +38,12 @@
   }
 }
 
+.toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
 .toolbar > ul {
   display: flex;
   justify-content: center;
