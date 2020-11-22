@@ -161,7 +161,9 @@
   padding-top: 15px;
 }
 
-
+.contact > .contact-info > p {
+  background: lightgray;
+}
 
 .social-icons > * {
   margin-left: 10px;

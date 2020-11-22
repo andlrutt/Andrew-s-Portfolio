@@ -12,6 +12,7 @@ function Contact() {
             <div className="contact-info">
                 <a href ="mailto:andrewlorutter@gmail.com">Email</a>
                 <a href="tel:931-494-3566">931-494-3566</a>
+                <p>Andrew Rutter</p>
             </div>
         </footer>
     );
