@@ -1,9 +1,13 @@
 import React from 'react';
+import AboutTitle from './AboutTitle';
+import AboutContent from './AboutContent';
 
 function About() {
     return (
-        <div className="about">
-            <p>This is a description about me! Based in Knoxville, TN etc...</p>
+        
+        <div className="about" id="about">
+            <AboutTitle />
+            <AboutContent />
         </div>
 
     );

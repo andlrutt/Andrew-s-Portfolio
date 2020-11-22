@@ -3,7 +3,6 @@ import Cover from './Cover';
 import Toolbar from './Toolbar';
 import About from './About';
 import Skills from './Skills';
-import Portfolio from './Portfolio';
 import Contact from './Contact';
 
 import './App.css';
@@ -15,7 +14,6 @@ function App() {
       <Cover />
       <About />
       <Skills />
-      <Portfolio />
       <Contact />
     </div> 
                     

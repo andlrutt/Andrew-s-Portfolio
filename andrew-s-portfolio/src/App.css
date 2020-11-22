@@ -38,11 +38,18 @@
   }
 }
 
+.toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
 .toolbar > ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
-    
+  
 }
 
 .toolbar > ul > a {
@@ -54,6 +61,115 @@
 }
 
 .toolbar > ul > a:hover {
-  background-color: gray;
+  color: gray;
 }
 
+.cover {
+  width: 100%;
+  height: 100vh;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  top: -76px;
+  z-index: -1;
+  
+}
+
+.cover > * {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.name {
+  text-align: center;
+}
+
+.cover-image > img {
+  min-width: 800px; 
+  
+}
+
+.name {
+  min-width: 300px;
+}
+
+#cover-image-full {
+  width: 20%;
+  
+
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.skills {
+  width: 250px;
+  margin: auto;
+}
+.skills > ul {
+  column-count: 2;
+  column-gap: 5px;
+  text-align: center;
+  
+}
+
+.skills > ul > li {
+  display: block;
+}
+
+.collapse-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapsed {
+  display: none;
+}
+
+
+.portfolio > .collapse-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: inline;
+  vertical-align: center;
+  text-align: center;
+
+}
+
+.about-content {
+  height: 50vh;
+}
+
+.contact  {
+  position: static;
+  text-align: center;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  background: lightgray;
+  padding-top: 15px;
+}
+
+
+
+.social-icons > * {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-info > a {
+  margin-left: 10px;
+  text-decoration: none;
+  
+}
