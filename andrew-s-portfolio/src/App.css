@@ -44,11 +44,12 @@
   width: 100%;
   background-color: white;
 }
+
 .toolbar > ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
-    
+  
 }
 
 .toolbar > ul > a {
@@ -96,6 +97,7 @@
 
 #cover-image-full {
   width: 20%;
+  
 
 }
 
@@ -103,6 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .skills {
@@ -112,6 +115,7 @@
 .skills > ul {
   column-count: 2;
   column-gap: 5px;
+  text-align: center;
   
 }
 
@@ -129,11 +133,6 @@
   display: none;
 }
 
-.contact > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .portfolio > .collapse-button {
   display: flex;
@@ -145,4 +144,32 @@
   display: inline;
   vertical-align: center;
   text-align: center;
+
+}
+
+.about-content {
+  height: 50vh;
+}
+
+.contact  {
+  position: static;
+  text-align: center;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  background: lightgray;
+  padding-top: 15px;
+}
+
+
+
+.social-icons > * {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-info > a {
+  margin-left: 10px;
+  text-decoration: none;
+  
 }
