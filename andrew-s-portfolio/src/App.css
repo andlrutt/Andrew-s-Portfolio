@@ -54,6 +54,68 @@
 }
 
 .toolbar > ul > a:hover {
-  background-color: gray;
+  color: gray;
 }
 
+.cover > .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover > .cover-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  min-width: 300px;
+}
+
+#cover-image-full {
+  width: 20%;
+
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  width: 250px;
+  margin: auto;
+}
+.skills > ul {
+  column-count: 2;
+  column-gap: 5px;
+  
+}
+
+.skills > ul > li {
+  display: block;
+}
+
+.collapse-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapsed {
+  display: none;
+}
+
+.contact > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio > .collapse-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
