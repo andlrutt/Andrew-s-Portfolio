@@ -158,6 +158,11 @@
   height: 50vh;
 }
 
+.about-content > p {
+  width: 400px;
+  text-align: center;
+}
+
 .contact  {
   position: static;
   text-align: center;
