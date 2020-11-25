@@ -151,7 +151,6 @@
   display: inline;
   vertical-align: center;
   text-align: center;
-
 }
 
 .about-content {
@@ -186,4 +185,11 @@
   margin-left: 10px;
   text-decoration: none;
   
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -215px;
+  visibility: hidden;
 }
