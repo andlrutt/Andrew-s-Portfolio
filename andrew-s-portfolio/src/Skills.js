@@ -2,10 +2,8 @@ import React from 'react';
 
 function Skills() {
     return (
-        /*<div className="skills">
-            <p>List of skills/specialties in a block of bullet points, maybe with small descriptions</p>
-        </div>*/
-        <div className="skills" id="skills">
+        <div className="skills">
+            <a class="anchor" id="skills" href="anchor">anchor</a>
             <ul>
                 <li>item 1</li>
                 <li>item 2</li>

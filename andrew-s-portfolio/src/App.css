@@ -111,6 +111,7 @@
 .skills {
   width: 250px;
   margin: auto;
+  height: 100vh;
 }
 .skills > ul {
   column-count: 2;
@@ -134,21 +135,31 @@
 }
 
 
-.portfolio > .collapse-button {
+.portfolio  {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+.portfolio-content > img {
+  width: 250px;
+  height: auto;
 }
 
 .about {
   display: inline;
   vertical-align: center;
   text-align: center;
-
 }
 
 .about-content {
   height: 50vh;
+}
+
+.about-content > p {
+  width: 400px;
+  text-align: center;
 }
 
 .contact  {
@@ -161,7 +172,9 @@
   padding-top: 15px;
 }
 
-
+.contact > .contact-info > p {
+  background: lightgray;
+}
 
 .social-icons > * {
   margin-left: 10px;
@@ -172,4 +185,11 @@
   margin-left: 10px;
   text-decoration: none;
   
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -215px;
+  visibility: hidden;
 }

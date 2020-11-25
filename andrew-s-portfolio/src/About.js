@@ -5,7 +5,8 @@ import AboutContent from './AboutContent';
 function About() {
     return (
         
-        <div className="about" id="about">
+        <div className="about">
+            <a class="anchor" id="about" href="anchor">anchor</a>
             <AboutTitle />
             <AboutContent />
         </div>
