@@ -111,6 +111,7 @@
 .skills {
   width: 250px;
   margin: auto;
+  height: 100vh;
 }
 .skills > ul {
   column-count: 2;
@@ -134,10 +135,11 @@
 }
 
 
-.portfolio > .collapse-button {
+.portfolio  {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .about {
