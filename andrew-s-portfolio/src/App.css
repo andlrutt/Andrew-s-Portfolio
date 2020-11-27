@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .App-logo {
@@ -8,9 +10,12 @@
   pointer-events: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    scroll-behavior: auto;
   }
 }
 
@@ -23,6 +28,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+body {
+  font-family: 'Montserrat';
 }
 
 .App-link {
@@ -42,7 +51,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-image: linear-gradient(#add8e6, 80%, rgba(255,0,0,0));
+  z-index: 1;
+}
+
+.toolbar a:hover {
+  border-radius: 20%;
+  font-weight: 800;
+  color: black;
 }
 
 .toolbar > ul {
@@ -50,6 +66,10 @@
   justify-content: center;
   list-style-type: none;
   
+}
+
+div {
+  overflow: hidden;
 }
 
 .toolbar > ul > a {
@@ -70,9 +90,9 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-  top: -76px;
-  z-index: -1;
   
+  z-index: -1;
+  background-image: linear-gradient(#C4DFE6, #66A5A5);
 }
 
 .cover > * {
@@ -80,6 +100,15 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 70px;
+  text-decoration: underline;
+  position: relative;
+  top: 10px;
+}
+.cover-image > img {
+  border-radius: 50%;
 }
 
 .name {
@@ -101,33 +130,81 @@
 
 }
 
-.about {
+
+.skills {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  background-image: linear-gradient(#07575B,  #003B46);
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  color: white;
 }
 
-.skills {
-  width: 250px;
-  margin: auto;
-  height: 100vh;
+.skills > p {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: 500;
 }
+
 .skills > ul {
   column-count: 2;
   column-gap: 5px;
   text-align: center;
+  width: 70%;
+  position: relative;
+  top: 20%;
+  
   
 }
 
 .skills > ul > li {
   display: block;
+  padding-top: 150px;
+  font-size: 25px;
 }
 
 .collapse-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  font-family: 'Montserrat';
+  border: none;
+  border-radius: 4px;
+  color: white;
+  
+  background-color: #948e3a;
+  font-size: 28px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.collapse-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.collapse-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.collapse-button:hover span {
+  padding-right: 25px;
+}
+
+.collapse-button:hover span::after {
+  opacity: 1;
+  right: 0;
 }
 
 .collapsed {
@@ -135,56 +212,99 @@
 }
 
 
+
+
 .portfolio  {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
+  background-image: linear-gradient(#003b46, 80%, #001145);
+  color: white;
 }
 
 .portfolio-content > img {
   width: 250px;
   height: auto;
+  
+}
+
+.portfolio-content > p {
+  font-weight: 500;
 }
 
 .about {
-  display: inline;
-  vertical-align: center;
   text-align: center;
+  height: 100vh;
+  background-image: linear-gradient(#66A5A5,  #07575B);  
+  color: white;
 }
 
-.about-content {
-  height: 50vh;
+.about > * {
+  margin: auto;
+  width: 25%;
+  padding-top: 100px;
+  position: relative;
+  top: 350px;
 }
 
-.about-content > p {
-  width: 400px;
-  text-align: center;
+.about > h2 {
+  font-size: 100px;
+  width: auto;
+  font-weight: 500;
 }
+
+.about > p {
+  font-size: 25px;
+}
+
 
 .contact  {
   position: static;
   text-align: center;
   bottom: 0px;
-  height: 100px;
+  height: 100%;
   width: 100%;
-  background: lightgray;
-  padding-top: 15px;
+  background: #001145;
+  color: white;
+  position: relative;
+}
+
+.contact > * {
+  position: relative;
+  top: 100px;
 }
 
 .contact > .contact-info > p {
-  background: lightgray;
+  background: #001145;
+  position: relative;
+  z-index: 1;
+  color: lightslategray;
+}
+
+.filler {
+  position: relative;
+  top: 76px;
+  height: 76px;
+  background-color: #001145;
 }
 
 .social-icons > * {
   margin-left: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .contact-info > a {
   margin-left: 10px;
   text-decoration: none;
-  
+  position: relative;
+  color: lightslategray;
+}
+
+.contact-info > a:hover {
+  text-decoration: underline;
 }
 
 a.anchor {
@@ -192,4 +312,5 @@ a.anchor {
   position: relative;
   top: -215px;
   visibility: hidden;
+  width: 0;
 }

@@ -6,6 +6,7 @@ import CoverImage from './Cover-image';
 function Cover() {
     return(
         <div className="cover">
+            <a class="anchor" id="cover-anchor" href="anchor">anchor</a>
             <Name />
             <CoverImage />
         </div>
