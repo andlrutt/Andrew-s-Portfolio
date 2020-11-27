@@ -97,9 +97,12 @@ div {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   color: white;
   font-size: 70px;
   text-decoration: underline;
+  position: relative;
+  top: 10px;
 }
 
 .name {
@@ -121,9 +124,12 @@ div {
 
 }
 
+.skills {
   width: 100%;
   margin: auto;
+  height: 100vh;
   background-image: linear-gradient(#07575B,  #003B46);
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,11 +145,14 @@ div {
   text-align: center;
   width: 70%;
   position: relative;
+  top: 20%;
+  
   
 }
 
 .skills > ul > li {
   display: block;
+  padding-top: 150px;
   font-size: 25px;
 }
 
@@ -217,6 +226,7 @@ div {
   color: white;
 }
 
+.about > * {
   margin: auto;
   width: 25%;
   position: relative;
@@ -239,7 +249,11 @@ div {
   position: relative;
 }
 
+.contact > * {
   position: relative;
+  top: 100px;
+}
+
 .contact > .contact-info > p {
   background: #001145;
   position: relative;
@@ -247,8 +261,13 @@ div {
   color: lightslategray;
 }
 
+.filler {
   position: relative;
+  top: 76px;
+  height: 76px;
   background-color: #001145;
+}
+
 .social-icons > * {
   margin-left: 10px;
   margin-bottom: 10px;
