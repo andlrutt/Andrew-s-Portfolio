@@ -12,8 +12,7 @@ function PortfolioButton(props) {
     return(
 
         <div>
-        <a href="#bottom"><button onClick={setVisibility}>{props.title}</button></a>
-        
+        <button className="collapse-button" onClick={setVisibility}><span>{props.title}</span></button>
         <div className={isVisible ? "" : "collapsed"}>
             <PortfolioContent image={props.image} desc={props.desc}/>        
         </div>
