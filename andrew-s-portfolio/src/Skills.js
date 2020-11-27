@@ -4,11 +4,12 @@ function Skills() {
     return (
         <div className="skills">
             <a class="anchor" id="skills" href="anchor">anchor</a>
+            <p>My Skills</p>
             <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                <li>item 4</li>
+                <li>Python and C++</li>
+                <li>Backend JavaScript</li>
+                <li>Creative problem solving</li>
+                <li>Communication and coordination</li>
             </ul>
         </div>
     );
