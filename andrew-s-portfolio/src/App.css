@@ -227,6 +227,7 @@ div {
   display: inline;
   vertical-align: center;
   text-align: center;
+  height: 100vh;
   background-image: linear-gradient(#66A5A5,  #07575B);  
   color: white;
 }
@@ -234,7 +235,11 @@ div {
 .about > * {
   margin: auto;
   width: 25%;
+  padding-top: 100px;
   position: relative;
+  top: 350px;
+}
+
 .about > h2 {
   font-size: 100px;
   width: auto;
@@ -249,7 +254,7 @@ div {
   position: static;
   text-align: center;
   bottom: 0px;
-  height: 100px;
+  height: 100%;
   width: 100%;
   background: #001145;
   color: white;
