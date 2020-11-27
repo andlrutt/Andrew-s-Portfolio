@@ -10,7 +10,7 @@ function PortfolioContent(props) {
         <div className="portfolio-content">
             <img src={props.image} alt=""></img>
             <p>{props.desc}</p>
-            <div id="bottom"></div>
+            <div id="jumps"></div>
         </div>
 
     );
