@@ -7,7 +7,7 @@ function Toolbar() {
         <div className="toolbar">
             
             <ul>
-                <a href="#top">Home</a>
+                <a href="#cover-anchor">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#portfolio">Portfolio</a>
